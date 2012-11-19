@@ -1,0 +1,19 @@
+<% title "Prospect Structures" %>
+
+<table>
+  <tr>
+    <th>Descrizione</th>
+    <th>Valido</th>
+  </tr>
+  <% for prospect_structure in @prospect_structures %>
+    <tr>
+      <td><%= prospect_structure.descrizione %></td>
+      <td><%= prospect_structure.valido %></td>
+      <td><%= link_to "Show", prospect_structure %></td>
+      <td><%= link_to "Edit", edit_prospect_structure_path(prospect_structure) %></td>
+      <td><%= link_to "Destroy", prospect_structure, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Prospect Structure", new_prospect_structure_path %></p>

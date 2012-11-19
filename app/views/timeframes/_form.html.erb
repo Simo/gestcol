@@ -1,0 +1,16 @@
+<%= form_for @timeframe do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :orario %><br />
+    <%= f.text_field :orario %>
+  </p>
+  <p>
+    <%= f.label :inizio %><br />
+    <%= f.text_field :inizio %>
+  </p>
+  <p>
+    <%= f.label :fine %><br />
+    <%= f.text_field :fine %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

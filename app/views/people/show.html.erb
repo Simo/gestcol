@@ -1,0 +1,68 @@
+<% title "Person" %>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @person.nome %>
+</p>
+<p>
+  <strong>Cognome:</strong>
+  <%= @person.cognome %>
+</p>
+<p>
+  <strong>Data Nascita:</strong>
+  <%= @person.data_nascita %>
+</p>
+<p>
+  <strong>Indirizzo:</strong>
+  <%= @person.indirizzo %>
+</p>
+<p>
+  <strong>N Civico:</strong>
+  <%= @person.n_civico %>
+</p>
+<p>
+  <strong>Cap:</strong>
+  <%= @person.cap %>
+</p>
+<p>
+  <strong>Citta:</strong>
+  <%= @person.citta %>
+</p>
+<p>
+  <strong>Provincia:</strong>
+  <%= @person.provincia %>
+</p>
+<p>
+  <strong>Tel Fisso:</strong>
+  <%= @person.tel_fisso %>
+</p>
+<p>
+  <strong>Tel Cell:</strong>
+  <%= @person.tel_cell %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @person.email %>
+</p>
+<p>
+  <strong>Note:</strong>
+  <%= @person.note %>
+</p>
+<p>
+  <strong>Insegnante:</strong>
+  <%= @person.insegnante %>
+</p>
+<p>
+  <strong>Genitore:</strong>
+  <%= @person.genitore %>
+</p>
+<p>
+  <strong>Alunno:</strong>
+  <%= @person.alunno %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_person_path(@person) %> |
+  <%= link_to "Destroy", @person, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", people_path %>
+</p>

@@ -1,0 +1,20 @@
+<%= form_for @weekly_prospect do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :Classe %><br />
+    <%= f.collection_select :grade_id, @grades, :id, :descr_classe %>
+  </p>
+  <p>
+    <%= f.label :Materia %><br />
+    <%= f.collection_select :matter_id, @matters, :id, :nome_materia %>
+  </p>
+  <p>
+    <%= f.label :Giornata %><br />
+    <%= f.collection_select :day_id, @days, :id, :giornata %>
+  </p>
+  <p>
+    <%= f.label :Orario %><br />
+    <%= f.collection_select :timeframe_id, @timeframe, :id, :orario %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

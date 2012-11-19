@@ -1,0 +1,28 @@
+one:
+  giornata: Lunedi
+  prt: 1
+
+two:
+  giornata: Martedi
+  prt: 2
+  
+three:
+  giornata: Mercoledi
+  prt: 3
+  
+four:
+  giornata: Giovedi
+  prt: 4
+
+five:
+  giornata: Venerdi
+  prt: 5
+  
+six:
+  giornata: Sabato
+  prt: 6
+
+seven:
+  giornata: Domenica
+  prt: 7
+

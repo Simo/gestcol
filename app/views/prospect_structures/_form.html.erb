@@ -1,0 +1,12 @@
+<%= form_for @prospect_structure do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :descrizione %><br />
+    <%= f.text_field :descrizione %>
+  </p>
+  <p>
+    <%= f.label :valido %><br />
+    <%= f.check_box :valido %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

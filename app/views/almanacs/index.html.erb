@@ -1,0 +1,25 @@
+<% title "Almanacs" %>
+
+<table>
+  <tr>
+    <th>N Settimana</th>
+    <th>Month</th>
+    <th>Giorno Inizio</th>
+    <th>Giorno Fine</th>
+    <th>Anno</th>
+  </tr>
+  <% for almanac in @almanacs %>
+    <tr>
+      <td><%= almanac.n_settimana %></td>
+      <td><%= almanac.month_id %></td>
+      <td><%= almanac.giorno_inizio %></td>
+      <td><%= almanac.giorno_fine %></td>
+      <td><%= almanac.anno %></td>
+      <td><%= link_to "Show", almanac %></td>
+      <td><%= link_to "Edit", edit_almanac_path(almanac) %></td>
+      <td><%= link_to "Destroy", almanac, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Almanac", new_almanac_path %></p>

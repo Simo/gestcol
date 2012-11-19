@@ -1,0 +1,29 @@
+<% title "Struttura prospetto" %>
+
+<p>
+  <strong>Descrizione:</strong>
+  <%= @prospect_structure.descrizione %>
+</p>
+<p>
+  <strong>Valido:</strong>
+  <%= @prospect_structure.valido %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_prospect_structure_path(@prospect_structure) %> |
+  <%= link_to "Destroy", @prospect_structure, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", prospect_structures_path %>
+</p>
+<div id="ttContainer">
+</div>
+<!-- Modal -->
+<div id="modalBox" class="modal hide">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+    <h4 id="modalBoxLabel"></h4>
+  </div>
+  <div class="modal-body">
+  </div>
+  <div class="modal-footer">
+  </div>
+</div>

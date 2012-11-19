@@ -1,0 +1,64 @@
+<%= form_for @person do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :cognome %><br />
+    <%= f.text_field :cognome %>
+  </p>
+  <p>
+    <%= f.label :data_nascita %><br />
+    <%= f.date_select :data_nascita %>
+  </p>
+  <p>
+    <%= f.label :indirizzo %><br />
+    <%= f.text_field :indirizzo %>
+  </p>
+  <p>
+    <%= f.label :n_civico %><br />
+    <%= f.text_field :n_civico %>
+  </p>
+  <p>
+    <%= f.label :cap %><br />
+    <%= f.text_field :cap %>
+  </p>
+  <p>
+    <%= f.label :citta %><br />
+    <%= f.text_field :citta %>
+  </p>
+  <p>
+    <%= f.label :provincia %><br />
+    <%= f.text_field :provincia %>
+  </p>
+  <p>
+    <%= f.label :tel_fisso %><br />
+    <%= f.text_field :tel_fisso %>
+  </p>
+  <p>
+    <%= f.label :tel_cell %><br />
+    <%= f.text_field :tel_cell %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :note %><br />
+    <%= f.text_field :note %>
+  </p>
+  <p>
+    <%= f.label :insegnante %><br />
+    <%= f.check_box :insegnante %>
+  </p>
+  <p>
+    <%= f.label :genitore %><br />
+    <%= f.check_box :genitore %>
+  </p>
+  <p>
+    <%= f.label :alunno %><br />
+    <%= f.check_box :alunno %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

@@ -1,0 +1,13 @@
+one:
+  n_settimana: 1
+  month_id: 1
+  giorno_inizio: 1
+  giorno_fine: 1
+  anno: 1
+
+two:
+  n_settimana: 1
+  month_id: 1
+  giorno_inizio: 1
+  giorno_fine: 1
+  anno: 1

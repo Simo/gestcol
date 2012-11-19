@@ -1,0 +1,28 @@
+<% title "Weekly Prospect" %>
+
+<p>
+  <strong>Prospect Structure:</strong>
+  <%= @weekly_prospect.prospect_structure_id %>
+</p>
+<p>
+  <strong>Class:</strong>
+  <%= @weekly_prospect.grade_id %>
+</p>
+<p>
+  <strong>Matter:</strong>
+  <%= @weekly_prospect.matter_id %>
+</p>
+<p>
+  <strong>Day:</strong>
+  <%= @weekly_prospect.day_id %>
+</p>
+<p>
+  <strong>Timeframe:</strong>
+  <%= @weekly_prospect.timeframe_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_weekly_prospect_path(@weekly_prospect) %> |
+  <%= link_to "Destroy", @weekly_prospect, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", weekly_prospects_path %>
+</p>

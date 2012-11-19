@@ -1,0 +1,16 @@
+<% title "Day" %>
+
+<p>
+  <strong>Giornata:</strong>
+  <%= @day.giornata %>
+</p>
+<p>
+  <strong>Prt:</strong>
+  <%= @day.prt %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_day_path(@day) %> |
+  <%= link_to "Destroy", @day, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", days_path %>
+</p>

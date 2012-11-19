@@ -1,0 +1,24 @@
+<% title "Matter" %>
+
+<p>
+  <strong>Nome Materia:</strong>
+  <%= @matter.nome_materia %>
+</p>
+<p>
+  <strong>Compresenza:</strong>
+  <%= @matter.compresenza %>
+</p>
+<p>
+  <strong>Giardino:</strong>
+  <%= @matter.giardino %>
+</p>
+<p>
+  <strong>Altri Costi:</strong>
+  <%= @matter.altri_costi %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_matter_path(@matter) %> |
+  <%= link_to "Destroy", @matter, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", matters_path %>
+</p>

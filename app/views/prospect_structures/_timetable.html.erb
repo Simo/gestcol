@@ -1,0 +1,30 @@
+<div class="row" >
+	<div id="calendar">
+		<div class="row">
+				<ul class="span2 day">
+					<li class="daydef">Orari</li>
+					<li class="schedule">8.30 - 9.30</li>
+					<li class="schedule">9.30 - 10.30</li>
+					<li class="schedule">10.30 - 11.00</li>
+					<li class="schedule">11.00 - 12.00</li>
+					<li class="schedule">12.00 - 13.00</li>
+					<li class="schedule">14.00 - 15.00</li>
+					<li class="schedule">15.00 - 16.00</li>
+					<li class="schedule">16.00 - 17.00</li>
+				</ul>
+			<% @days.each do |day| %>
+				<ul id="<%= day.giornata.downcase %>" class="span2 day" >
+					<li class="daydef"><%= day.giornata %></li>
+					<% @timeframes.each do |tm| %>
+						<li id="<%= @prospect_structure.id %>_<%= day.id %>_<%= tm.id %>" class="schedule" name="<%= tm.orario %>"></li>
+					<% end %>
+				</ul>
+			<% end %>
+		</div>
+	</div>
+</div>
+<ul id="nascosta" style="visibility: hidden;">
+	<% @wps.each do |wp| %>
+		<li id="idwp_<%= wp.id %>" name="<%= wp.prospect_structure_id %>_<%= wp.day_id %>_<%= wp.timeframe_id %>"><%= wp.matter.nome_materia%></li>
+	<% end %>
+</ul>

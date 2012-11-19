@@ -1,0 +1,2 @@
+class WeeklyProspectCompleteController < ApplicationController
+end

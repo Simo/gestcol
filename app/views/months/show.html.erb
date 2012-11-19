@@ -1,0 +1,12 @@
+<% title "Month" %>
+
+<p>
+  <strong>Mese:</strong>
+  <%= @month.mese %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_month_path(@month) %> |
+  <%= link_to "Destroy", @month, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", months_path %>
+</p>

@@ -1,0 +1,24 @@
+.day {
+  
+  list-style: none;
+  
+  li {
+      
+    &.daydef {
+      text-align: center;
+    }
+    
+    &.schedule {
+      text-align: center;
+      min-height: 30px;
+      border: 1px dotted #eee;
+      
+      &:hover {
+        background: #eee;
+      }
+      
+    }
+  
+  }
+  
+}

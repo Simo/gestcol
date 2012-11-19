@@ -1,0 +1,9 @@
+one:
+  orario: MyString
+  inizio: MyString
+  fine: MyString
+
+two:
+  orario: MyString
+  inizio: MyString
+  fine: MyString

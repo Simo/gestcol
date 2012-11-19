@@ -1,0 +1,28 @@
+<% title "Almanac" %>
+
+<p>
+  <strong>N Settimana:</strong>
+  <%= @almanac.n_settimana %>
+</p>
+<p>
+  <strong>Month:</strong>
+  <%= @almanac.month_id %>
+</p>
+<p>
+  <strong>Giorno Inizio:</strong>
+  <%= @almanac.giorno_inizio %>
+</p>
+<p>
+  <strong>Giorno Fine:</strong>
+  <%= @almanac.giorno_fine %>
+</p>
+<p>
+  <strong>Anno:</strong>
+  <%= @almanac.anno %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_almanac_path(@almanac) %> |
+  <%= link_to "Destroy", @almanac, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", almanacs_path %>
+</p>

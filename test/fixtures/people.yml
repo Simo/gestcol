@@ -1,0 +1,33 @@
+one:
+  nome: MyString
+  cognome: MyString
+  data_nascita: 2012-10-31
+  indirizzo: MyString
+  n_civico: MyString
+  cap: MyString
+  citta: MyString
+  provincia: MyString
+  tel_fisso: MyString
+  tel_cell: MyString
+  email: MyString
+  note: MyString
+  insegnante: false
+  genitore: false
+  alunno: false
+
+two:
+  nome: MyString
+  cognome: MyString
+  data_nascita: 2012-10-31
+  indirizzo: MyString
+  n_civico: MyString
+  cap: MyString
+  citta: MyString
+  provincia: MyString
+  tel_fisso: MyString
+  tel_cell: MyString
+  email: MyString
+  note: MyString
+  insegnante: false
+  genitore: false
+  alunno: false

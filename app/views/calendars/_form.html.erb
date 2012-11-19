@@ -1,0 +1,12 @@
+<%= form_for @calendar do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :almanac_id %><br />
+    <%= f.number_field :almanac_id %>
+  </p>
+  <p>
+    <%= f.label :prospect_structure_id %><br />
+    <%= f.number_field :prospect_structure_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

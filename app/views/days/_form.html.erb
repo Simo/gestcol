@@ -1,0 +1,12 @@
+<%= form_for @day do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :giornata %><br />
+    <%= f.text_field :giornata %>
+  </p>
+  <p>
+    <%= f.label :prt %><br />
+    <%= f.number_field :prt %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

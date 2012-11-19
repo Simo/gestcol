@@ -1,0 +1,11 @@
+one:
+  nome_materia: MyString
+  compresenza: false
+  giardino: false
+  altri_costi: MyString
+
+two:
+  nome_materia: MyString
+  compresenza: false
+  giardino: false
+  altri_costi: MyString

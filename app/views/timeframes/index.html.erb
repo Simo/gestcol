@@ -1,0 +1,21 @@
+<% title "Timeframes" %>
+
+<table>
+  <tr>
+    <th>Orario</th>
+    <th>Inizio</th>
+    <th>Fine</th>
+  </tr>
+  <% for timeframe in @timeframes %>
+    <tr>
+      <td><%= timeframe.orario %></td>
+      <td><%= timeframe.inizio %></td>
+      <td><%= timeframe.fine %></td>
+      <td><%= link_to "Show", timeframe %></td>
+      <td><%= link_to "Edit", edit_timeframe_path(timeframe) %></td>
+      <td><%= link_to "Destroy", timeframe, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Timeframe", new_timeframe_path %></p>

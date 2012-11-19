@@ -1,0 +1,24 @@
+<%= form_for @almanac do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :n_settimana %><br />
+    <%= f.number_field :n_settimana %>
+  </p>
+  <p>
+    <%= f.label :month_id %><br />
+    <%= f.number_field :month_id %>
+  </p>
+  <p>
+    <%= f.label :giorno_inizio %><br />
+    <%= f.number_field :giorno_inizio %>
+  </p>
+  <p>
+    <%= f.label :giorno_fine %><br />
+    <%= f.number_field :giorno_fine %>
+  </p>
+  <p>
+    <%= f.label :anno %><br />
+    <%= f.number_field :anno %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

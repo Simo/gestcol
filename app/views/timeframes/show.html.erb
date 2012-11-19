@@ -1,0 +1,20 @@
+<% title "Timeframe" %>
+
+<p>
+  <strong>Orario:</strong>
+  <%= @timeframe.orario %>
+</p>
+<p>
+  <strong>Inizio:</strong>
+  <%= @timeframe.inizio %>
+</p>
+<p>
+  <strong>Fine:</strong>
+  <%= @timeframe.fine %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_timeframe_path(@timeframe) %> |
+  <%= link_to "Destroy", @timeframe, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", timeframes_path %>
+</p>

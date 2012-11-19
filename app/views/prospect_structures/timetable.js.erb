@@ -1,0 +1,12 @@
+$("#ttContainer").html('<%= escape_javascript(render(:partial => 'timetable')) %>');
+
+var array = $('.day li.schedule');
+	
+$.each(array, function(index,elem){
+	var hook = $(elem).attr('id');
+	var mat = $('#nascosta li[name="'+hook+'"]').text();
+	if(mat!=''){
+		var wpid = $('#nascosta li[name="'+hook+'"]').attr('id').split('_')[1];
+		$(elem).html('<div id="wpid_'+wpid+'">'+mat+'</div>');
+	}
+});
