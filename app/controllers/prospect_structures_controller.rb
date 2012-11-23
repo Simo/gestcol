@@ -19,7 +19,7 @@ class ProspectStructuresController < ApplicationController
   
   def timetable
     @prospect_structure = ProspectStructure.find(params[:id])
-    
+
     respond_to do |format|
       format.html
       format.js

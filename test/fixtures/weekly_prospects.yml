@@ -1,0 +1,27 @@
+one:
+  prospect_structure_id: 1
+  grade_id: 1
+  matter_id: 1
+  day_id: 1
+  timeframe_id: 1
+
+two:
+  prospect_structure_id: 1
+  grade_id: 1
+  matter_id: 1
+  day_id: 1
+  timeframe_id: 2
+  
+three:
+  prospect_structure_id: 1
+  grade_id: 2
+  matter_id: 2
+  day_id: 1
+  timeframe_id: 3
+  
+four:
+  prospect_structure_id: 2
+  grade_id: 1
+  matter_id: 1
+  day_id: 1
+  timeframe_id: 1

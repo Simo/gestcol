@@ -1,0 +1,9 @@
+one:
+  id: 1
+  descrizione: Primo
+  valido: true
+
+two:
+  id: 2
+  descrizione: Secondo
+  valido: true

@@ -1,0 +1,14 @@
+one:
+  id: 1
+  nome_materia: Giardino
+  compresenza: false
+  giardino: true
+  altri_costi: none
+
+two:
+  id: 2
+  nome_materia: Italiano
+  compresenza: true
+  giardino: false
+  altri_costi: none
+
