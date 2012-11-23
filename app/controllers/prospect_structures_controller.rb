@@ -1,20 +1,24 @@
 class ProspectStructuresController < ApplicationController
+  
+  before_filter :setup, :only => [:show, :timetable]
+    
+  def setup
+    @timeframes = Timeframe.all
+    @days = Day.working_days
+    @wps = WeeklyProspect.all
+    @grades = Grade.all
+  end
+  
   def index
     @prospect_structures = ProspectStructure.all
   end
 
   def show
     @prospect_structure = ProspectStructure.find(params[:id])
-    @timeframes = Timeframe.all
-    @days = Day.working_days
-    @wps = WeeklyProspect.all
   end
   
   def timetable
     @prospect_structure = ProspectStructure.find(params[:id])
-    @timeframes = Timeframe.all
-    @days = Day.working_days
-    @wps = WeeklyProspect.all
     
     respond_to do |format|
       format.html

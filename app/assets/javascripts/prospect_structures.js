@@ -2,9 +2,7 @@ $(document).ready(function(){
 	
 	var init = function(){
 		$.ajax('http://localhost:3000/timetable/1.js', {
-			success: function(data){
-				console.log('ok');
-			}
+			success: function(data){}
 		});
 	};
 	
@@ -21,6 +19,7 @@ $(document).ready(function(){
 				$('.modal-header h4').attr('name',id);
 				$('#weekly_prospect_day_id').val($(this).attr('id').split('_')[1]);
 				$('#weekly_prospect_timeframe_id').val($(this).attr('id').split('_')[2]);
+				$('#weekly_prospect_grade_id').val($(this).attr('id').split('_')[3]);
 				$('.modal-footer').html('<button class="btn" data-dismiss="modal" aria-hidden="true">Chiudi</button><button id="update_orario" class="btn btn-primary">Aggiorna</button>');
 				$('#modalBox').modal('show');
 			});
@@ -32,6 +31,7 @@ $(document).ready(function(){
 				$('.modal-header h4').text(header);
 				$('#weekly_prospect_day_id').val($(this).attr('id').split('_')[1]);
 				$('#weekly_prospect_timeframe_id').val($(this).attr('id').split('_')[2]);
+				$('#weekly_prospect_grade_id').val($(this).attr('id').split('_')[3]);
 				$('.modal-footer').html('<button class="btn" data-dismiss="modal" aria-hidden="true">Chiudi</button><button id="salva_nuovo" class="btn btn-primary">Salva</button>');
 				$('#modalBox').modal('show');
 			});

@@ -1,0 +1,14 @@
+one:
+  n_settimana: 52
+  month_id: 12
+  giorno_inizio: 24
+  giorno_fine: 30
+  anno: 2012
+
+two:
+  n_settimana: 53
+  month_id: 12
+  giorno_inizio: 31
+  giorno_fine: 6
+  anno: 2012
+

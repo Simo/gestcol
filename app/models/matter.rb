@@ -2,8 +2,8 @@ class Matter < ActiveRecord::Base
   attr_accessible :nome_materia, :compresenza, :giardino, :altri_costi
   
   has_many :people, :through => :teachingship
-  has_many :grades, :through => :learnship
-  
+  #has_many :grades, :through => :learnship
+  has_and_belongs_to_many :grades
   has_many :calendars
   has_many :weekly_prospects
   
