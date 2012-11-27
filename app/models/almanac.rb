@@ -5,6 +5,14 @@ class Almanac < ActiveRecord::Base
   
   has_many :calendars
   
+  scope :current, lambda { |today| where("month_id = ? AND anno = ? AND n_settimana = ?", today.month, today.year, today.strftime("%W")) }
+  
+  def self.current_almanac
+    today = Date.today
+    a = Almanac.where("month_id = ? AND anno = ? AND giorno_inizio <= ? AND giorno_fine >= ?", today.month, today.year, today.day, today.day)
+    a.first
+  end
+  
   def max_day almanac
     if almanac.month_id == 2
       if almanac.anno == 2016 || almanac.anno == 2020 || almanac.anno == 2024

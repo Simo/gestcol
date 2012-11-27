@@ -1,0 +1,7 @@
+$("#ttContainer").html('<%= escape_javascript(render(:partial => 'timetable')) %>');
+
+$('#tabs').tabs();
+
+var array = $('.day li.schedule.body');
+	
+$.popola();

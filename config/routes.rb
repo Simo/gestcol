@@ -22,6 +22,8 @@ Gescol::Application.routes.draw do
   match 'prospetto_completo/:id' => 'weekly_prospect_complete#index' 
   
   match 'timetable/:id' => 'prospect_structures#timetable'
+  
+  match 'timecalendar' => 'home#timetable'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
