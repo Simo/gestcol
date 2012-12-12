@@ -6,8 +6,10 @@ class HomeController < ApplicationController
       @almanac = Almanac.current(Date.today).first
       @calendars = Calendar.where(:almanac_id => @almanac.id)
       @days = Day.working_days
+      @timeframes = Timeframe.all
       @wps = WeeklyProspect.all
       @grades = Grade.all
+      @matters = Matter.all
     end
   
   def index

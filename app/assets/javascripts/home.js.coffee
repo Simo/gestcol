@@ -4,16 +4,15 @@
 
 $(document).ready ->
   init = ->
-    $.ajax "http://localhost:3000/timetable/1.js",
+    $.ajax "http://localhost:3000/timecalendar.js",
       success: (data) ->
-
 
   $("#ttContainer").delegate ".day li.schedule", "click", (e) ->
     e.preventDefault()
     unless $(this).children().length is 0
       id = $(this).children().attr("id").split("_")[1] #recuperare l'id del pezzetto di prospetto settimanale
       #chiamata ajax
-      $.ajax("http://localhost:3000/weekly_prospects/" + id + "/edit.js",
+      $.ajax("http://localhost:3000/calendars/" + id + "/edit.js",
         context: $(this)
       ).done ->
         header = "Programmazione della fascia " + $(this).attr("name") + " di " + $(this).parent().attr("id")
@@ -26,7 +25,7 @@ $(document).ready ->
         $("#modalBox").modal "show"
 
     else
-      $.ajax("http://localhost:3000/weekly_prospects/new.js",
+      $.ajax("http://localhost:3000/calendars/new.js",
         context: $(this)
       ).done ->
         header = "Programmazione della fascia " + $(this).attr("name") + " di " + $(this).parent().attr("id")
@@ -40,7 +39,7 @@ $(document).ready ->
 
   $("#modalBox").delegate "#salva_nuovo", "click", (e) ->
     e.preventDefault()
-    $.ajax "http://localhost:3000/weekly_prospects.js",
+    $.ajax "http://localhost:3000/calendars.js",
       type: "POST"
       data: $("form").serialize()
       success: ->
@@ -50,7 +49,7 @@ $(document).ready ->
   $("#modalBox").delegate "#update_orario", "click", (e) ->
     e.preventDefault()
     id = $(".modal-header h4").attr("name")
-    $.ajax "http://localhost:3000/weekly_prospects/" + id + ".js",
+    $.ajax "http://localhost:3000/calendars/" + id + ".js",
       type: "POST"
       data: $("form").serialize()
       success: ->

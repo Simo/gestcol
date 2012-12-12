@@ -33,7 +33,7 @@
 </div>
 </div> <!-- chiude #tabs -->
 <ul id="nascosta" style="visibility: hidden;">
-	<% @caledars.each do |cal| %>
+	<% @calendars.each do |cal| %>
 		<li id="idcal_<%= cal.id %>" name="<%= cal.almanac_id %>_<%= cal.day_id %>_<%= cal.timeframe_id %>_<%= cal.grade_id %>"><%= cal.matter.nome_materia%></li>
 	<% end %>
 </ul>

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+	var prospect_structure = {
 	var init = function(){
 		$.ajax('http://localhost:3000/timetable/1.js', {
 			success: function(data){}
@@ -62,5 +62,6 @@ $(document).ready(function(){
 	});
 	
 	init();
+} //closes prospect_structure namespace
 	
 });
