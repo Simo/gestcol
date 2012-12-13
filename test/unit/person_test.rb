@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class PersonTest < ActiveSupport::TestCase
-  def test_should_be_valid
-    assert Person.new.valid?
+  test "person should have relations" do
+    assert_equal 2, Person.find(1).directs
   end
 end

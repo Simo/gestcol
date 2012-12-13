@@ -1,7 +1,8 @@
 one:
-  nome: MyString
-  cognome: MyString
-  data_nascita: 2012-10-31
+  id:1
+  nome: Simone
+  cognome: Bierti
+  data_nascita: 1977-07-03
   indirizzo: MyString
   n_civico: MyString
   cap: MyString
@@ -11,14 +12,33 @@ one:
   tel_cell: MyString
   email: MyString
   note: MyString
-  insegnante: false
-  genitore: false
+  insegnante: true
+  genitore: true
   alunno: false
 
 two:
-  nome: MyString
-  cognome: MyString
-  data_nascita: 2012-10-31
+  id:2
+  nome: Elena
+  cognome: Baracchini
+  data_nascita: 1977-07-03
+  indirizzo: MyString
+  n_civico: MyString
+  cap: MyString
+  citta: MyString
+  provincia: MyString
+  tel_fisso: MyString
+  tel_cell: MyString
+  email: MyString
+  note: MyString
+  insegnante: false
+  genitore: true
+  alunno: false
+
+three:
+  id:3
+  nome: Gabriele
+  cognome: Bierti
+  data_nascita: 2010-03-08
   indirizzo: MyString
   n_civico: MyString
   cap: MyString
@@ -30,4 +50,4 @@ two:
   note: MyString
   insegnante: false
   genitore: false
-  alunno: false
+  alunno: true

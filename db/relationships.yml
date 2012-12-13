@@ -1,0 +1,14 @@
+one:
+  person_id: 1
+  related_id: 3
+  degree_id: 1
+
+two:
+  person_id: 1
+  related_id: 2
+  degree_id: 3
+
+three:
+  person_id: 2
+  related_id: 3
+  degree_id: 1

@@ -4,6 +4,12 @@ class Person < ActiveRecord::Base
   has_many :grades, :through => :mateship
   has_many :matters, :through => :teachingship
   
-  #has_many :people, :through > :relationship
+  #relationships directions
+  has_many :directs, :foreign_key => 'person_id', :class_name => 'Person', :dependent => :destroy
+  has_many :inverts, :foreign_key => 'related_id', :class_name => 'Person', :dependent => :destroy
+  
+  #relations
+  has_many :relateds, :through => :directs
+  has_many :people, :through => :inverts
   
 end
